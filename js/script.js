@@ -6,6 +6,10 @@ const swiper = new Swiper('.amenitiesSwiper', {
     spaceBetween: 24,
     loop: true,
     speed: 600,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
     navigation: {
         nextEl: '.amenitiesNextSlide',
         prevEl: '.amenitiesPrevSlide',
