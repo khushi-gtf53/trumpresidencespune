@@ -140,7 +140,7 @@
                     <img src="assets/map/everett-map.png" alt="">
                     <div class="w-full flex justify-center mt-10">
                         <button onclick="event.preventDefault(); openContactModal();"
-                            class="cinzel-uniquifier inline-flex md:hidden jutify-center uppercase border-y-2 border-[#721c1399] px-8 z-[1] py-3 call_now_btn tracking-[2px] inline-flex text-[#C7C7C7]">view
+                            class="cinzel-uniquifier inline-flex md:hidden jutify-center uppercase border-y-2 border-[#721c1399] px-8 z-[1] py-3 call_now_btn tracking-[2px] inline-flex text-black">view
                             map</button>
                     </div>
                 </div>
@@ -396,7 +396,7 @@
     </section>
 
     <!-- Amenities section  -->
-    <section class="carousel-wrapper py-section relative" >
+    <section class="carousel-wrapper pt-[3rem] md:pt-[6rem] relative" >
         <div class="custom_container space-y-6 text-center">
             <span class="block title">world-class</span>
             <h4 class="cinzel-uniquifier heading">Amenities</h4>
@@ -438,57 +438,82 @@
         </div>
 
         <!-- Caption -->
-        <div class="caption-area flex items-center justify-center gap-4 mt-9 lg:px-0 px-5">
-            <div class="caption-arrow amenitiesPrevSlide">
-                <svg class="w-[32px] h-[10px] shrink-0" viewBox="0 0 40 10" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <line x1="40" y1="5" x2="10" y2="5" stroke="#721c13" stroke-width="0.8" />
-                    <polyline points="14,1 6,5 14,9" fill="none" stroke="#721c13" stroke-width="0.8" />
-                </svg>
-            </div>
-
+        <div class="caption-area flex flex-col items-center justify-center gap-4 mt-9 lg:px-0 px-5">
             <p class="amenities-caption-text" id="slideCaption">Ganesh temple</p>
 
-            <div class="caption-arrow amenitiesNextSlide">
-                <svg class="w-[32px] h-[10px] shrink-0" viewBox="0 0 40 10" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <line x1="0" y1="5" x2="30" y2="5" stroke="#721c13" stroke-width="0.8" />
-                    <polyline points="26,1 34,5 26,9" fill="none" stroke="#721c13" stroke-width="0.8" />
-                </svg>
+            <div class="flex items-center justify-center gap-4">
+                <div class="caption-arrow amenitiesPrevSlide">
+                    <svg class="w-[32px] h-[10px] shrink-0" viewBox="0 0 40 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <line x1="40" y1="5" x2="10" y2="5" stroke="#721c13" stroke-width="0.8" />
+                        <polyline points="14,1 6,5 14,9" fill="none" stroke="#721c13" stroke-width="0.8" />
+                    </svg>
+                </div>
+
+                <div class="caption-arrow amenitiesNextSlide">
+                    <svg class="w-[32px] h-[10px] shrink-0" viewBox="0 0 40 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0" y1="5" x2="30" y2="5" stroke="#721c13" stroke-width="0.8" />
+                        <polyline points="26,1 34,5 26,9" fill="none" stroke="#721c13" stroke-width="0.8" />
+                    </svg>
+                </div>
             </div>
         </div>
 
     </section>
 
    <!-- Partners section  -->
-    <section class="relative py-section">
+    <section class="relative py-[3rem] md:py-[6rem]">
         <div class="heading_container col-span-2 text-center mb-10">
                     <h1 class="cinzel-uniquifier heading">Proudly Partnered With</h1>                   
                 </div>
-        <div class="w-full md:max-w-5xl mx-auto">
-            <div class="grid grid-cols-1  gap-4 ">
-                <div class="partners-card flex flex-col items-center text-center gap-4 rounded-[24px] border border-white/10 bg-white/5 p-2">
-                    <img src="assets/association/1.png" alt="Trump Residences logo" class="h-20 w-auto object-contain" />
-                    <p class="text-sm ">Vision Skylish Group limited (VSGL) is a powerful collaboration between Siddhivinayak Groups and Veraco Grroup of Compaanies, combining decades of trust, craftsmanship and industry expertise. With a joint legacy spanning over 18 million sq. ft. of development, VSGL is redefining urban living through thoughtful planning, sustainable design and a deep commitment to quality. Their projects across residential, commercial and industrial segments are designed to build more than spaces - they create communities that inspire growth, belonging and lasting value.</p>
+        <div class="custom_container">
+            <div class="grid grid-cols-1 md:grid-cols-2  gap-10 ">
+                <div class="partners-card border border-[#721c13] rounded-md flex flex-col items-center justify-center text-center gap-6  bg-white/5 p-6">
+                    <img src="assets/association/1.webp" alt="Trump Residences logo" class="w-40 h-auto object-contain" />
+                    <p class="text-sm px-10 pb-10 ">Vision Skylish Group limited (VSGL) is a powerful collaboration between Siddhivinayak Groups and Veraco Grroup of Compaanies, combining decades of trust, craftsmanship and industry expertise. With a joint legacy spanning over 18 million sq. ft. of development, VSGL is redefining urban living through thoughtful planning, sustainable design and a deep commitment to quality. Their projects across residential, commercial and industrial segments are designed to build more than spaces - they create communities that inspire growth, belonging and lasting value.</p>
                 </div>
-                <div class="partners-card flex flex-col items-center text-center gap-4 rounded-[24px] border border-white/10 bg-white/5 p-6">
-                    <img src="assets/association/2.png" alt="Smartworld Developers logo" class="h-20 w-auto object-contain" />
-                    <p class="text-sm ">Rooted in Pune's legacy and driven by a decade of trust, Kalash Properties has redefined urban living since 2016. Blending craftsmanship, integrity and vision, every project stands as a testament to design excellence and lasting relationships shaping Pune's skyline with purpose and pride.</p>
+                <div class="partners-card border border-[#721c13] rounded-md flex flex-col items-center justify-center text-center gap-6  bg-white/5 p-6">
+                    <img src="assets/association/2.png" alt="Smartworld Developers logo" class="w-40 h-auto object-contain" />
+                    <p class="text-sm px-10 pb-10 ">Rooted in Pune's legacy and driven by a decade of trust, Kalash Properties has redefined urban living since 2016. Blending craftsmanship, integrity and vision, every project stands as a testament to design excellence and lasting relationships shaping Pune's skyline with purpose and pride.</p>
                 </div>
-                <div class="partners-card flex flex-col items-center text-center gap-4 rounded-[24px] border border-white/10 bg-white/5 p-6">
-                    <img src="assets/association/3.png" alt="Tribeca logo" class="h-20 w-auto object-contain" />
-                    <p class="text-sm ">For over four decades, Veraco Grroup of Compaanies has delivered landmark façades where precision engineering meets architectural artistry. With a 45-year legacy, a 20,000 sq. ft. advanced facility and 200+ projects spanning 2.2 million sq.ft., Veraco specializes in façade engineering, custom cladding, glazing and system windows - transforming vision into structure at any scale. Trusted for the region’s most demanding architectural projects, Veraco doesn’t just build façades - it engineers the future of building envelopes.</p>
+                <div class="partners-card border border-[#721c13] rounded-md flex flex-col items-center justify-center text-center gap-6  bg-white/5 p-6">
+                    <img src="assets/association/3.webp" alt="Tribeca logo" class="w-40 h-auto object-contain" />
+                    <p class="text-sm px-10 pb-10 ">For over four decades, Veraco Grroup of Compaanies has delivered landmark façades where precision engineering meets architectural artistry. With a 45-year legacy, a 20,000 sq. ft. advanced facility and 200+ projects spanning 2.2 million sq.ft., Veraco specializes in façade engineering, custom cladding, glazing and system windows - transforming vision into structure at any scale. Trusted for the region’s most demanding architectural projects, Veraco doesn’t just build façades - it engineers the future of building envelopes.</p>
                 </div>
-                <div class="partners-card flex flex-col items-center text-center gap-4 rounded-[24px] border border-white/10 bg-white/5 p-6">
-                    <img src="assets/association/4.png" alt="Exclusive partner logo" class="h-20 w-auto object-contain" />
-                    <p class="text-sm ">Guided by the blessings of Lord Ganesha, Siddhivinayak Groups stands as one of Pune’s most trusted real estate names, creating quality homes that have touched countless lives over the past 35 years. With more than 15 million sq. ft. developed across 50+ landmark projects, the Group has built a strong legacy of delivering well-planned, value-driven and innovative residential and commercial spaces. The brand embodies integrity, trust, innovation and timeless quality - making superior living a reality for families across Pune and PCMC while continuing to shape communities with purpose and pride.</p>
+                <div class="partners-card border border-[#721c13] rounded-md flex flex-col items-center justify-center text-center gap-6  bg-white/5 p-6">
+                    <img src="assets/association/4.webp" alt="Exclusive partner logo" class="w-40 h-auto object-contain" />
+                    <p class="text-sm px-10 pb-10 ">Guided by the blessings of Lord Ganesha, Siddhivinayak Groups stands as one of Pune’s most trusted real estate names, creating quality homes that have touched countless lives over the past 35 years. With more than 15 million sq. ft. developed across 50+ landmark projects, the Group has built a strong legacy of delivering well-planned, value-driven and innovative residential and commercial spaces. The brand embodies integrity, trust, innovation and timeless quality - making superior living a reality for families across Pune and PCMC while continuing to shape communities with purpose and pride.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- About Developer  -->
+    <section class="map w-full md:h-screen relative z-2 py-[3rem] md:py-[6rem]">
+        <div class="custom_container">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-40">
+                 <div class="map ">
+                    <img src="assets/tribeca-lullanagar-tribeca.jpg" alt="">
+                    <div class="w-full flex justify-center mt-10">
+                        <button onclick="event.preventDefault(); openContactModal();"
+                            class="cinzel-uniquifier inline-flex md:hidden jutify-center uppercase border-y-2 border-[#721c1399] px-8 z-[1] py-3 call_now_btn tracking-[2px] inline-flex text-black">view
+                            map</button>
+                    </div>
+                </div>
+                <div class="overview flex flex-col item-center md:items-start text-center md:text-start justify-center gap-10">
+                    <h1 class="cinzel-uniquifier heading ">about developer</h1>
+                    <p class="">Founded in 2012, Tribeca is India’s premier luxury real estate developer, renowned for creating iconic landmarks that redefine urban skylines. Our vision is to craft the most coveted “Trophy Property” in every market we enter. As the largest developer of Trump-branded residences globally, we proudly present India’s finest and most expansive collection of luxury branded homes. Recognized for our exceptional achievements, we are the largest developer of Trump properties worldwide, the creators of the world’s largest rooftop terrace, India’s leading branded luxury developer, and the developers behind Pune’s largest high street retail destination.</p>
+
+                    <button onclick="event.preventDefault(); openContactModal();" class="cinzel-uniquifier lg:inline-flex hidden uppercase border-y-2 border-[#721c13] px-8 z-[1] py-3 call_now_btn tracking-[2px] inline-flex text-black">enquire now</button>
+                </div>
+               
             </div>
         </div>
     </section>
    
 
-    <section class="form_sec_container  relative" id="contact-us">
+    <section class="form_sec_container pt-[3rem] md:pt-[6rem] relative" id="contact-us">
 
 
         <div class="w-full flex justify-center">
@@ -669,7 +694,7 @@
             } else {
                 contentHtml = `
                     <div class="text-center mb-3 md:mb-6">
-                        <img src="assets/common/logo.png" class="w-[6rem] md:w-[6rem] h-auto mx-auto" alt="">
+                        <img src="assets/common/logo.png" class="w-[6rem] md:w-[10rem] h-auto mx-auto" alt="">
                         <p class="leading-[normal] pb-[15px] md:pb-[5px] cinzel-uniquifier mt-2 md:mt-3 uppercase text-[12px] md:text-[14px] tracking-[0.5px] md:tracking-[1px] text-black">Get in Touch with Us for More Information
 </p>
                     </div>
