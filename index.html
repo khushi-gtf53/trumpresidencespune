@@ -10,6 +10,19 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        input,
+        textarea {
+            color: #000 !important;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        input:focus,
+        textarea:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- cinzel and montserrat font -->
@@ -232,14 +245,14 @@
     </section> -->
 
     <!-- Stunnig Interiors  -->
-    <section class="relative py-[brem] md:pb-[6rem] overflow-hidden">
+    <section class="relative py-[3rem] md:pb-[6rem] overflow-hidden">
         <img src="assets/common/left_building_blob.svg" alt="building blob" height="800" width="800"
             class="lg:block hidden absolute  circle_blob bottom_blob left-0 bottom-[-80px] w-[38%]" />
         <section class="relative lg:px-0 flex flex-col justify-center md:place-items-center">
-            <img src="assets/common/circle_blob.webp" alt="background blob" height="800" width="800"
+            <!-- <img src="assets/common/circle_blob.webp" alt="background blob" height="800" width="800"
                 class="lg:block hidden absolute  circle_blob bottom_blob left-[-50%] w-[100%] top-[-60%] opacity-[0.3]" />
             <img src="assets/common/circle_blob.webp" alt="background blob" height="800" width="800"
-                class="lg:block hidden absolute  circle_blob bottom_blob right-[-48%] w-[90%] top-[-60%] opacity-[0.3]" />
+                class="lg:block hidden absolute  circle_blob bottom_blob right-[-48%] w-[90%] top-[-60%] opacity-[0.3]" /> -->
             <div>
                 <div class="heading_container col-span-2 text-center">
                     <h1 class="cinzel-uniquifier heading">STUNNING INTERIORS</h1>
@@ -249,8 +262,8 @@
                 </div>
                 <div class="lg:grid lg:grid-cols-12 gap-10 lg:mt-[60px] mt-[30px] lg:w-[90%] lg:ml-auto relative">
                     <div class="lg:col-span-4 col-span-12 lg:text-center m-auto px-[30px]">
-                        <img src="assets/common/circle_blob.webp" alt="building blob" height="800" width="800"
-                            class="lg:hidden block absolute left-0 top-[-297px] opacity-[.4] w-full w-[38%]" />
+                        <!-- <img src="assets/common/circle_blob.webp" alt="building blob" height="800" width="800"
+                            class="lg:hidden block absolute left-0 top-[-297px] opacity-[.4] w-full w-[38%]" /> -->
                         <p class="mb-10 text-center">
                           Step into the world of Trump®, where every detail reflects powerful design and timeless sophistication. At Trump Residences Pune, the interiors are not merely crafted—they are curated for the discerning few, seamlessly blending legendary craftsmanship with priceless artistry.
 
@@ -372,16 +385,16 @@
                             </div>
                             <div class="absolute bottom-0 left-1/2 -translate-x-1/2 flex items-center gap-4 z-10">
                                 <button id="prevBtn"
-                                    class="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition">
-                                    <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor"
+                                    class="p-2 rounded-full bg-[#721c13]   transition">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
                                         viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M15 19l-7-7 7-7" />
                                     </svg>
                                 </button>
                                 <button id="nextBtn"
-                                    class="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition">
-                                    <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor"
+                                    class="p-2 rounded-full bg-[#721c13]   transition">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
                                         viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 5l7 7-7 7" />
@@ -397,13 +410,13 @@
 
     <!-- Amenities section  -->
     <section class="carousel-wrapper pt-[3rem] md:pt-[6rem] relative" >
-        <div class="custom_container space-y-6 text-center">
+        <div class="custom_container space-y-3 md:space-y-6 text-center">
             <span class="block title">world-class</span>
             <h4 class="cinzel-uniquifier heading">Amenities</h4>
         </div>
 
         <!-- Swiper -->
-        <div class="swiper amenitiesSwiper pt-14">
+        <div class="swiper amenitiesSwiper pt-7 md:pt-14">
             <div class="swiper-wrapper items-center lg:h-[520px] h-[350px] hover:cursor-grab">
 
                 <!-- Slide 1 -->
@@ -468,22 +481,22 @@
                     <h1 class="cinzel-uniquifier heading">Proudly Partnered With</h1>                   
                 </div>
         <div class="custom_container">
-            <div class="grid grid-cols-1 md:grid-cols-2  gap-10 ">
+            <div class="grid grid-cols-1 md:grid-cols-2  gap-4 md:gap-10 ">
                 <div class="partners-card border border-[#721c13] rounded-md flex flex-col items-center justify-center text-center gap-6  bg-white/5 p-6">
                     <img src="assets/association/1.webp" alt="Trump Residences logo" class="w-40 h-auto object-contain" />
-                    <p class="text-sm px-10 pb-10 ">Vision Skylish Group limited (VSGL) is a powerful collaboration between Siddhivinayak Groups and Veraco Grroup of Compaanies, combining decades of trust, craftsmanship and industry expertise. With a joint legacy spanning over 18 million sq. ft. of development, VSGL is redefining urban living through thoughtful planning, sustainable design and a deep commitment to quality. Their projects across residential, commercial and industrial segments are designed to build more than spaces - they create communities that inspire growth, belonging and lasting value.</p>
+                    <p class="text-[12px]  md:px-10  ">Vision Skylish Group limited (VSGL) is a powerful collaboration between Siddhivinayak Groups and Veraco Grroup of Compaanies, combining decades of trust, craftsmanship and industry expertise. With a joint legacy spanning over 18 million sq. ft. of development, VSGL is redefining urban living through thoughtful planning, sustainable design and a deep commitment to quality. Their projects across residential, commercial and industrial segments are designed to build more than spaces - they create communities that inspire growth, belonging and lasting value.</p>
                 </div>
                 <div class="partners-card border border-[#721c13] rounded-md flex flex-col items-center justify-center text-center gap-6  bg-white/5 p-6">
                     <img src="assets/association/2.png" alt="Smartworld Developers logo" class="w-40 h-auto object-contain" />
-                    <p class="text-sm px-10 pb-10 ">Rooted in Pune's legacy and driven by a decade of trust, Kalash Properties has redefined urban living since 2016. Blending craftsmanship, integrity and vision, every project stands as a testament to design excellence and lasting relationships shaping Pune's skyline with purpose and pride.</p>
+                    <p class="text-[12px]  md:px-10  ">Rooted in Pune's legacy and driven by a decade of trust, Kalash Properties has redefined urban living since 2016. Blending craftsmanship, integrity and vision, every project stands as a testament to design excellence and lasting relationships shaping Pune's skyline with purpose and pride.</p>
                 </div>
                 <div class="partners-card border border-[#721c13] rounded-md flex flex-col items-center justify-center text-center gap-6  bg-white/5 p-6">
                     <img src="assets/association/3.webp" alt="Tribeca logo" class="w-40 h-auto object-contain" />
-                    <p class="text-sm px-10 pb-10 ">For over four decades, Veraco Grroup of Compaanies has delivered landmark façades where precision engineering meets architectural artistry. With a 45-year legacy, a 20,000 sq. ft. advanced facility and 200+ projects spanning 2.2 million sq.ft., Veraco specializes in façade engineering, custom cladding, glazing and system windows - transforming vision into structure at any scale. Trusted for the region’s most demanding architectural projects, Veraco doesn’t just build façades - it engineers the future of building envelopes.</p>
+                    <p class="text-[12px]  md:px-10  ">For over four decades, Veraco Grroup of Compaanies has delivered landmark façades where precision engineering meets architectural artistry. With a 45-year legacy, a 20,000 sq. ft. advanced facility and 200+ projects spanning 2.2 million sq.ft., Veraco specializes in façade engineering, custom cladding, glazing and system windows - transforming vision into structure at any scale. Trusted for the region’s most demanding architectural projects, Veraco doesn’t just build façades - it engineers the future of building envelopes.</p>
                 </div>
                 <div class="partners-card border border-[#721c13] rounded-md flex flex-col items-center justify-center text-center gap-6  bg-white/5 p-6">
                     <img src="assets/association/4.webp" alt="Exclusive partner logo" class="w-40 h-auto object-contain" />
-                    <p class="text-sm px-10 pb-10 ">Guided by the blessings of Lord Ganesha, Siddhivinayak Groups stands as one of Pune’s most trusted real estate names, creating quality homes that have touched countless lives over the past 35 years. With more than 15 million sq. ft. developed across 50+ landmark projects, the Group has built a strong legacy of delivering well-planned, value-driven and innovative residential and commercial spaces. The brand embodies integrity, trust, innovation and timeless quality - making superior living a reality for families across Pune and PCMC while continuing to shape communities with purpose and pride.</p>
+                    <p class="text-[12px]  md:px-10  ">Guided by the blessings of Lord Ganesha, Siddhivinayak Groups stands as one of Pune’s most trusted real estate names, creating quality homes that have touched countless lives over the past 35 years. With more than 15 million sq. ft. developed across 50+ landmark projects, the Group has built a strong legacy of delivering well-planned, value-driven and innovative residential and commercial spaces. The brand embodies integrity, trust, innovation and timeless quality - making superior living a reality for families across Pune and PCMC while continuing to shape communities with purpose and pride.</p>
                 </div>
             </div>
         </div>
@@ -602,7 +615,7 @@
                             target="_blank">https://maharera.mahaonline.gov.in/</a> </p>
                     <p class="mt-4">This Project is being developed by Serianee Corrp LLP, Promoter of the Project under RERA PM1261012600059. The Project is financed and mortgaged in favour of Prachay Capital Limited (“Lender”) and the buyer shall be required to obtain a no-objection certificate from the Lender before entering into the Agreement to Sale of any unit/flat in the Project. Artistic impressions and depictions of the elevation features and specifications (if any) are indicative only. Final product may vary.</p>
                    
-                    <p class="text-center font-[400] tracking-[0] text-[12px] mt-4">© Copyright 2026 - Trump® Tower Pune |
+                    <p class="text-center font-[400] tracking-[0] text-[12px] mt-4">© Copyright 2026 - Tribeca The Everett Lullanagar |
                         Design by&nbsp; <a href="https://gtftechnologies.com/" target="_blank">GTF Technologies</a> </p>
                 </div>
             </div>
