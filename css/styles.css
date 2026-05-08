@@ -21,6 +21,33 @@ p {
     letter-spacing: 1px;
 }
 
+.call-ripple {
+    animation: ripple 0.6s linear infinite;
+    box-sizing: border-box;
+}
+
+.call-ripple:hover img {
+    transform: rotate(135deg);
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow:
+            0 4px 10px rgba(114, 28, 19, 0.2),
+            0 0 0 0 rgba(114, 28, 19, 0.2),
+            0 0 0 5px rgba(114, 28, 19, 0.2),
+            0 0 0 10px rgba(114, 28, 19, 0.2);
+    }
+
+    100% {
+        box-shadow:
+            0 4px 10px rgba(114, 28, 19, 0.2),
+            0 0 0 5px rgba(114, 28, 19, 0.2),
+            0 0 0 10px rgba(114, 28, 19, 0.2),
+            0 0 0 20px rgba(114, 28, 19, 0);
+    }
+}
+
 .cinzel-uniquifier {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
